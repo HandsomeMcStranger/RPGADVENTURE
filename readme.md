@@ -1,4 +1,6 @@
-Spitballing ideas for making a retro style text adventure with RPG elements for the TRS-80 4/4P
+Spitballing ideas for making a retro style text adventure with RPG elements for the TRS-80 4/4P.
+
+
 Emulator used: http://48k.ca/trs80gp.html
 
 I was considering making a retro Basic programming tutorial and wanted to make a demo of the project first.
@@ -9,12 +11,17 @@ There are a lot of improvements to make, but as I will be starting again from sc
 
 I also need to consider programming basics for beginners and demonstrate easy principles before it gets too complicated.
 
+
 Installation:
 
 1: Type BASIC into the emulator.
+
 2: Copy the source code into the clipboard.
+
 3: CTL-ALT-V to paste it directly into the emulator
+
 4: RUN
+
 
 I sometimes have a glitch when pasting where it will miss out odd characters here and there. If this happens, try pasting again. Or isolating the lines with syntax errors and repasting just those.
 
