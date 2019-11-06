@@ -25,6 +25,6 @@ Installation:
 
 I sometimes have a glitch when pasting where it will miss out odd characters here and there. If this happens, try pasting again. Or isolating the lines with syntax errors and repasting just those.
 
-I will perhaps include a disk image later on, if you see it in the repositary, copy it to your TRS-80 folder and insert it into drive :1
+I've included a disk image if you prefer to load/save it that way. Copy it to your TRS-80 folder and insert it into drive :1
 you can then load it from within basic by typing LOAD "RPGADVENT/BAS:1" or from the DOS prompt by typing BASIC RPGADVENT/BAS:1
 
