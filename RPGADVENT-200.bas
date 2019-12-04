@@ -327,21 +327,21 @@
 4015 if npcstam<1 then print "The "+npc$+" has tuckered himself out. He can't raise a limb to attack.":goto 4050
 4016 ?"The "+npc$+" lashes out with strength ";hit: if rnd(npcluck+2)>rnd(luck+2) then ? "And it hits you for ";connect else print " .. but you duck and he misses.":connect=0
 4020 npcstam=npcstam-1:npcluck=npcluck-1:cstat(9)=cstat(9)-connect:cstat(3)=cstat(3)-connect
-4021 for x=1 to 9: if cstat(x)<0 then cstat(x)=0:next
-4022 if npcstam<0 then npchlth=npchlth-1:npcstam=0
+4021 for x=1 to 9: if cstat(x)<0 then cstat(x)=0
+4022 next:if npcstam<0 then npchlth=npchlth-1:npcstam=0
 4023 if npcluck<0 then npcluck=0
 
 ' do I need to keep resetting cstats to 0 or is there a better way.
 4025 if cstat(9)<1 then ? "You hear The gods rumble as consciousness slips: Thou broughtest pisse to a shytefight.":end
 
-4050 for x=1 to 9: if cstat(x)<0 then cstat(x)=0:next:luckycrit=rnd(12/(cstat(6)+1)):if luckycrit<>1 then luckycrit=0 else luckycrit=rnd(cstat(6))
+4050 luckycrit=rnd(12/(cstat(6)+1)):if luckycrit<>1 then luckycrit=0 else luckycrit=rnd(cstat(6))
 4051 hit=rnd(cstat(1)/2)+1*rnd(cstat(4)/2)+1*(cstat(5)+luckycrit)+1:if hit<1 then hit=1
 4052 connect=hit-npcdef: if connect<1 then connect=1
 
 ' insert gosub animation routine between lashing out and connecting
 4053 ?"You lash out with strength ";hit: if rnd(cstat(6)+2)>rnd(npcluck+2) or npcstam<1 then ? "And hit the "+npc$+" for ";connect else print ".. but the "+npc$+" dodges.": connect=0
 4054 cstat(5)=cstat(5)-1:cstat(6)=cstat(6)-1:npchlth=npchlth-connect:npcdef=npcdef-connect
-4055 for x=1 to 9: if cstat(x)<0 then cstat(x)=0:next
+4055 '
 4056 if npchlth<1 then ? "You killed the "+npc$+". Now all their loot is yours" else round=round+1:goto 4011
 
 '4056 '?npc;ob1;ob(npc,8);trigger(ob(npc,8),1):?ob(ob1,8):?"why no work?";
