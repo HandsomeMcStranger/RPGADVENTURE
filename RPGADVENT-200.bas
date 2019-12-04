@@ -367,7 +367,7 @@
 
 5110 'if l(x+y,6)=1 then something :'DARK BLOCK
 
-5112 if l(xloc) AND 4 then ? @ PA+70,chr$(131)+chr$(131); :'WEST  EXIT OPEN
+5112 if l(xloc) AND 8 then ? @ PA+70,chr$(131)+chr$(131); :'WEST  EXIT OPEN
 5113 if l(xloc) And 4 then ? @ PA+234,chr$(191); :'SOUTH EXIT OPEN
 5114 if l(xloc) AND 2 then ? @ PA+77,chr$(131)+chr$(131);chr$(131); :'EAST  EXIT OPEN
 5115 if l(xloc) AND 1 then ? @ PA-86,chr$(191); :'NORTH EXIT OPEN
@@ -531,8 +531,8 @@
 9499 PRINT "okay."; ' eventually change this to returnmessage$ so I can rearrage the order of the messages. 
 9500 IF STDP<0 THEN ?:goto 7200 
 9501 IF OB(8,1)<0 OR OB(8,1)=LO THEN LIGHT=1
-9502 GOSUB 9600:IF L(LO) AND 16 then if LIGHT=0 THEN print @400,chr$(30):poke &hb94,3: PRINT @0,"It's too dark to see.":GOTO 9550 else poke &hb94,7
-9520 IF L(LO) AND 16 THEN PRINT@0,"Location: "; L$(LO) ELSE PRINT@0, LV$(LO)
+9502 GOSUB 9600:IF L(LO) AND 16 then if LIGHT=0 THEN print @400,chr$(30):poke &hb94,3: PRINT @0,"It's too dark to see.":GOTO 9550 
+9520 poke &hb94,7 :IF L(LO) AND 16 THEN  PRINT@0,"Location: "; L$(LO) ELSE PRINT@0, LV$(LO)
 9530 PRINT@240, "Items here: ";
 9531 FOR X=1 TO 28: IF OB(X,1)=LO THEN PRINT OB$(X);". ";:IH=1:IF OB(X,11)>0 THEN NPCH=ob(x,11):npc$=ob$(x):npc=x else npch=0
 9532 NEXT ': for x=1 to 2: if npc(x,1)=LO then print npc$(x);". ";:ih=1
@@ -542,7 +542,7 @@
 9541 'IF L(LO,2)=1 THEN PRINT "East.";
 9542 'IF L(LO,3)=1 THEN PRINT "South.";
 9543 'IF L(LO,4)=1 THEN PRINT "West.";
-9550 ?:PRINT"<";STRING$(78,45);">";
+9550 ?:PRINT"<";STRING$(78,45);">"
 
 
 'npc attack?
