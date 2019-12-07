@@ -11,7 +11,7 @@
 
 
 
-
+'add up total 1=N, 2=E, 4=S, 8=W, 16=No Light
 10 DATA "a slippery path", "You are standing at crest of a muddy hill. Behind you, the path steeply slopes  to your certain death in the cold rapids. Eastward you see a small village in   the distance.",2
 20 DATA "Path to the village.", "You are on the long path to the village. The path is faded and overgrown here asif people have been avoiding it.", 12
 30 DATA "Spooky graveyard","You are in a spooky graveyard. It was sunny outside, but now it is overcast and fog curls around the mossy stones and leafless trees.",8
@@ -22,8 +22,8 @@
 66 DATA "location 8","loc 8 verbose",0
 70 DATA "location 9","loc 9 verbose",0
 74 DATA "location 10","Place to be named by lazy co-author",1
-80 data "Thicket","You are in a thicket. The sharp branches make the exit east impassable, yet somenice person has dug a small tunnel through",10
-90 DATA "forking path","You are at a fork in the path. Eastwards, the road to the village remerges. A small path to a windmill lies to the south.",14
+80 data "Thicket","You are in a thicket. The sharp branches make the exit east impassable, yet somenice person has dug a small tunnel through",8
+90 DATA "forking path","You are at a fork in the path. Eastwards, the road to the village remerges. A small path to a windmill lies to the south.",6
 94 DATA "old village road","You are on the cobbled road to the village",15
 100 DATA "location 14","loc 14 verbose",0
 110 DATA "location 15","loc 15 verbose",0

@@ -10,7 +10,10 @@
 ' 800 onwards reads back that test data
 
 
-
+'OBJECTS - NAMEs, 
+' 1)LOCATION, 2)WEIGHT, 3)STATSID, 4)GOTO, 5)LOOK, 6)USE-swap with, 7)OBJ MUST BE PRESENT,
+' 8)TRIGGERID, 9)triggeron 1-look, 2-get, 3-drop, 4-help, 5-use, 6-attack. 7-kill
+' 10)EQUIP to slot, 11)OBJECT OR NPC   0=object, 1=hostileNPC 2=FriendlyNPC   --not yet-- 12)OBJ MUST NOT BE PRESENT
 
 100 DATA "rusty sword","sword",3,4,8,0,1,0,16,9,5,11,0
 101 data "crumpled note","note",-1,0,0,0,2,0,0,0,0,0,0
@@ -28,6 +31,7 @@
 210 data "wraith","wraith",0,99,6,0,0,0,0,0,0,0,1, "goblin","goblin",0,99,6,0,0,0,0,0,0,0,1
 220 data "randy ferret","ferret",0,99,6,0,0,0,0,0,0,0,1, "rattlesnake","snake",0,99,6,0,0,0,0,0,0,0,1
 240 data "fire ants","ants",0,99,6,0,0,0,0,0,0,0,1, "romany tinker","tinker",5,99,0,0,0,0,0,0,0,0,2
+241 data "tunnel","tunnel",11,99,0,12,0,0,0,0,0,0,0,  "tunnel","tunnel",12,99,0,11,0,0,0,0,0,0,0
 
 'insert new locations before here before null data terminator
 550 DATA "*","*",0,0,0,0,0,0,0,0,0,0,0,0
