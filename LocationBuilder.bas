@@ -20,7 +20,7 @@
 60 DATA "location 6","loc 6 verbose",0
 64 DATA "location 7","loc 7 verbose",0
 66 DATA "location 8","loc 8 verbose",0
-70 DATA "location 9","loc 9 verbose",0
+70 DATA "Crypt Steps","You are standing in the dark entrance to the crypt. Ahead of you, the squeaking and scratching of rats in the darkness.",20
 74 DATA "location 10","Place to be named by lazy co-author",1
 80 data "Thicket","You are in a thicket. The sharp branches make the exit east impassable, yet somenice person has dug a small tunnel through",8
 90 DATA "forking path","You are at a fork in the path. Eastwards, the road to the village remerges. A small path to a windmill lies to the south.",6
@@ -28,8 +28,8 @@
 100 DATA "location 14","loc 14 verbose",0
 110 DATA "location 15","loc 15 verbose",0
 120 DATA "location 16","loc 16 verbose",0
-130 DATA "location 17","loc 17 verbose",0
-140 DATA "location 18","loc 18 verbose",0
+130 DATA "Crypt","You are in an ancient crypt.",19
+140 DATA "Altar","Crypt altar. Some one has secretly been using this place for dark magic.",24
 150 DATA "location 19","loc 19 verbose",0
 160 DATA "Windmill","Windmill verbose",1
 170 DATA "location 21","loc 21 verbose",0
